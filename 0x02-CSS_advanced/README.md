@@ -1,6 +1,6 @@
 # 0x02. Advanced CSS
 
-<img src="/images/meme.png" alt="meme">
+![](https://github.com/xioperez01/holbertonschool-web_front_end/blob/main/0x02-CSS_advanced/images/meme.png)
 
 CSS is the language we use to style a Web page.
 
