@@ -15,7 +15,7 @@ html {
 	--font-family-title: var(--font-family-base);
 }
 
-body a {
+body {
 	color: var(--text-color);
 	font-family: var(--font-family-base);
 }
