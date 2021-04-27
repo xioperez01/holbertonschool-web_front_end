@@ -1,5 +1,10 @@
 /* Variables for the font size */
 
+html {
+	scroll-behavior: smooth;
+	font-size: 62.5%;
+}
+
 :root {
 	--color-primary: #d73953;
 	--color-black: #090909;
@@ -16,10 +21,6 @@
 	--font-size-xx-large: 4.8rem;
 }
 
-html {
-	scroll-behavior: smooth;
-	font-size: 62.5%;
-}
 
 body {
 	color: var(--text-color);
