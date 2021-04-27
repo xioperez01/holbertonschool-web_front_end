@@ -39,10 +39,10 @@ html {
 	--section-footer-padding: 3rem 0 0;
 	--section-footer-align: center;
 	--footer-padding: 5rem 0 1rem;
-	--nav-item-font-family: font-family-title;
-	--nav-item-font-weight: font-weight-bold;
-	--nav-item-font-size:font-size-medium;
-	--nav-item-letter-spacing: 4% of the root element;
+	--nav-item-font-family: var(--font-family-title);
+	--nav-item-font-weight: var(--font-weight-bold);
+	--nav-item-font-size: var(--font-size-medium);
+	--nav-item-letter-spacing: 0.4rem;
 	--nav-item-display: inline-block;
 	--nav-item-margin: 0 0 3rem 0;
 	--nav-item-link-hover: var(--color-primary);
