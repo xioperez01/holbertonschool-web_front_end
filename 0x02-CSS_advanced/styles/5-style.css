@@ -1,9 +1,4 @@
-/* Assigning fonts with var() */
-
-html {
-	scroll-behavior: smooth;
-	font: 62.5%;
-}
+/* Variables for the font size */
 
 :root {
 	--color-primary: #d73953;
@@ -12,13 +7,18 @@ html {
 	--color-light-grey: #f3f3f3;
 	--color-dark-grey: #353535;
 	--text-color: var(--color-black);
-	--font-family-base: "Helvetica Neue","Helvetica", "Arial", "sans-serif";
-	--font-family-title: var(--font-family-base);
+	--font-family-base: 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
+	--font-family-title: 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif';
 	--font-size-small: 1.2rem;
 	--font-size-medium: 1.6rem;
 	--font-size-large: 1.8rem;
 	--font-size-x-large: 2.3rem;
 	--font-size-xx-large: 4.8rem;
+}
+
+html {
+	scroll-behavior: smooth;
+	font: 62.5%;
 }
 
 body {
