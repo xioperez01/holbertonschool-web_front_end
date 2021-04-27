@@ -1,4 +1,4 @@
-/* Add more styles to the section tagline */
+/* Pseudo Classes */
 
 html {
 	scroll-behavior: smooth;
@@ -35,7 +35,7 @@ body {
 	font-family: var(--font-family-base);
 	font-size: var(--font-size-medium);
 	font-weight: var(--font-weight-regular);
-	min-height: var(--line-height-base);
+	line-height: var(--line-height-base);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -43,9 +43,21 @@ h1, h2, h3, h4, h5, h6 {
 	font-weight: var(--font-weight-bold);
 }
 
-a {
+a:link {
 	color: var(--text-color);
 	text-decoration: none;
+}
+
+a:visited {
+	font-style: italic;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:active {
+		background-color: var(--color-light-grey);
 }
 
 .visually-hidden {
@@ -72,5 +84,5 @@ a {
 }
 
 .section-header {
-	align-items: var(--section-header-align);
+	text-align: var(--section-header-align);
 }
