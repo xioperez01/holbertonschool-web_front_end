@@ -99,7 +99,7 @@ a:active {
 
 .card-services a {
 	display: block;
-	padding: 0.02rem;
+	padding: 2rem;
 	background-color: var(--color-light-grey);
 }
 
