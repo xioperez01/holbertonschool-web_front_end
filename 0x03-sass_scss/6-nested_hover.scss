@@ -8,6 +8,6 @@ $text-hover-color: #00FF00;
 button {
 	color: $text-red;
 	:hover {
-		color: #00FF00;
+		color: $text-hover-color;
 	}
 }
