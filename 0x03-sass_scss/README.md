@@ -1,7 +1,5 @@
 # Sass & Scss
 
-![](https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSass_(stylesheet_language)&psig=AOvVaw3CX777HfflGC1pgzkcLwMt&ust=1620162415861000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLi_8by1rvACFQAAAAAdAAAAABAD)
-
 Stylesheets are getting larger, more complex, and harder to maintain. This is where a CSS pre-processor can help.
 
 Sass lets you use features that do not exist in CSS, like variables, nested rules, mixins, imports, inheritance, built-in functions, and other stuff.
