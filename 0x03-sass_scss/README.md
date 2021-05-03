@@ -1,5 +1,7 @@
 # Sass & Scss
 
+![](https://www.google.com/url?sa=i&url=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FSass_(stylesheet_language)&psig=AOvVaw3CX777HfflGC1pgzkcLwMt&ust=1620162415861000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCLi_8by1rvACFQAAAAAdAAAAABAD)
+
 Stylesheets are getting larger, more complex, and harder to maintain. This is where a CSS pre-processor can help.
 
 Sass lets you use features that do not exist in CSS, like variables, nested rules, mixins, imports, inheritance, built-in functions, and other stuff.
@@ -7,6 +9,7 @@ Sass lets you use features that do not exist in CSS, like variables, nested rule
 A browser does not understand Sass code. Therefore, you will need a Sass pre-processor to convert Sass code into standard CSS.
 
 This process is called transpiling. So, you need to give a transpiler (some kind of program) some Sass code and then get some CSS code back.
+
 
 **What is Sass?**
 
@@ -30,6 +33,11 @@ This process is called transpiling. So, you need to give a transpiler (some kind
 * How to use mixins
 * How to declare extend/inheritance styles
 * How to manipulate operators
+
+## Resources
+
+* [Sass Basic](https://sass-lang.com/guide)
+* [Sass Tutorial](https://www.w3schools.com/sass/default.php)
 
 ## Enviroment
 
