@@ -2,7 +2,7 @@
 
 The use of mobile devices to surf the web continues to grow at an astronomical pace, and these devices are often constrained by display size and require a different approach to how content is laid out on the screen.
 
-![](https://github.com/xioperez01/holbertonschool-web_front_end/blob/main/0x06-responsive_design/images/rwd_desktop.png)
+![](https://github.com/xioperez01/holbertonschool-web_front_end/blob/main/0x06-responsive_design/images/Responsive.png)
 
 Responsive web design, originally defined by [Ethan Marcotte](https://alistapart.com/article/responsive-web-design/), responds to the needs of the users and the devices they're using. The layout changes based on the size and capabilities of the device.
 
