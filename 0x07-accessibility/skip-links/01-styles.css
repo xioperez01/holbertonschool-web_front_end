@@ -275,7 +275,7 @@ template {
 }
 
 /* Base
-			============================= */
+      ============================= */
 
 *,
 *:before,
@@ -364,7 +364,29 @@ a:active {
 }
 
 /* Helpers
-			============================= */
+      ============================= */
+.off-screen {
+	left: -100vw;
+	position: absolute;
+}
+
+.skip-link {
+	background: var(--color-black);
+	color: var(--color-white);
+	left: 0;
+	padding: .7rem;
+	position: fixed;
+	opacity: 0;
+	top: 0;
+	z-index: 10;
+	transform: translateY(-1rem);
+	transition: transform .2s ease-in-out, opacity .2s ease-in-out;
+}
+
+.skip-link:focus {
+	opacity: 1;
+	transform: translateY(0);
+}
 
 .visually-hidden:not(:focus):not(:active) {
 	position: absolute !important;
@@ -375,33 +397,10 @@ a:active {
 	white-space: nowrap;
 }
 
-.off-screen {
-	left: -100vw;
-	position: absolute;
-}
-
-.skip-link {
-	background-color: var(--color-black);
-	color: var(--color-white);
-	left: 0;
-	padding: 0.7rem;
-	position: fixed;
-	opacity: 0;
-	top: 0;
-	z-index: 10;
-	transform: translateY(-1rem);
-	transition: transform .2s ease-in-out, opacity .2s ease-in-out;
-}
-
-.skip-link:focus{
-	opacity: 1;
-	transition: translateY(0);
-}
-
 /*** 2. LAYOUT ***/
 
 /* Layout
-			============================= */
+      ============================= */
 
 .container {
 	max-width: 960px;
@@ -415,7 +414,7 @@ main img {
 }
 
 /* Grid
-			============================= */
+      ============================= */
 
 ul.row {
 	margin: -1rem;
@@ -462,7 +461,7 @@ ul.row {
 }
 
 /* Navbar
-			============================= */
+      ============================= */
 
 .nav {
 	margin: 0;
@@ -529,7 +528,7 @@ ul.row {
 }
 
 /* Header
-		============================= */
+    ============================= */
 
 .header {
 	padding: var(--header-padding);
@@ -545,7 +544,7 @@ ul.row {
 }
 
 /* Header menu mobile
-		============================= */
+    ============================= */
 
 .header .menu-icon {
 	cursor: pointer;
@@ -648,7 +647,7 @@ ul.row {
 }
 
 /* Footer
-			============================= */
+      ============================= */
 
 .footer {
 	--nav-item-font-weight: normal;
@@ -697,7 +696,7 @@ ul.row {
 /*** 3. SECTION ***/
 
 /* Section (all styles)
-			============================= */
+      ============================= */
 
 .section {
 	padding: var(--section-padding);
@@ -734,7 +733,7 @@ ul.row {
 }
 
 /* Section theming
-			============================= */
+      ============================= */
 
 [data-section-theme="dark"] {
 	--button-color: var(--color-white);
@@ -744,7 +743,7 @@ ul.row {
 }
 
 /* Section HERO
-			============================= */
+      ============================= */
 
 .section-hero {
 	position: relative;
@@ -796,7 +795,7 @@ ul.row {
 }
 
 /* Section Latest news
-			============================= */
+      ============================= */
 
 .section-latest-news .row {
 	flex-direction: row-reverse;
@@ -809,14 +808,14 @@ ul.row {
 }
 
 /* Section SERVICES
-			============================= */
+      ============================= */
 
 .section-services .row {
 	flex-wrap: wrap;
 }
 
 /* Section ABOUT US
-			============================= */
+      ============================= */
 
 .section-about-us [class*='col-'] {
 	align-self: center;
@@ -825,14 +824,14 @@ ul.row {
 /*** 4. CARD ***/
 
 /* Card (all styles)
-			============================= */
+      ============================= */
 
 .card-category {
 	color: var(--color-primary);
 }
 
 /* Card WORK
-			============================= */
+      ============================= */
 
 .card-work .card-outer {
 	position: relative;
@@ -924,7 +923,7 @@ ul.row {
 }
 
 /* Card SERVICES
-			============================= */
+      ============================= */
 
 .card-services .card-title {
 	margin: 0;
@@ -945,7 +944,7 @@ ul.row {
 }
 
 /* Card TESTIMONIAL
-			============================= */
+      ============================= */
 
 .card-testimonial {
 	text-align: center;
@@ -980,7 +979,7 @@ ul.row {
 /*** ARTICLE PAGE ***/
 
 /* Section HERO (article)
-			============================= */
+      ============================= */
 
 .hero-article {
 	background-size: 150rem 100rem;
@@ -1015,7 +1014,7 @@ ul.row {
 }
 
 /* Post
-			============================= */
+      ============================= */
 
 .post {
 	display: flex;
@@ -1061,7 +1060,7 @@ ul.row {
 }
 
 /* Post Meta
-			============================= */
+      ============================= */
 
 .post-meta-list {
 	flex-direction: column;
@@ -1088,7 +1087,7 @@ ul.row {
 }
 
 /* Tag list
-			============================= */
+      ============================= */
 
 .tag-list {
 	padding: 0;
@@ -1110,7 +1109,7 @@ ul.row {
 /*** FORM ***/
 
 /* Comment section
-			============================= */
+      ============================= */
 
 .post-comments {
 	width: 80%;
@@ -1131,7 +1130,7 @@ ul.row {
 }
 
 /* Basic form
-			============================= */
+      ============================= */
 
 form {
 	display: flex;
@@ -1186,7 +1185,7 @@ textarea:focus {
 }
 
 /* Form group
-			============================= */
+      ============================= */
 
 .form-group {
 	padding: 1rem;
@@ -1200,7 +1199,7 @@ textarea:focus {
 }
 
 /* Form field
-			============================= */
+      ============================= */
 
 .form-field-container {
 	position: relative;
@@ -1211,7 +1210,7 @@ textarea:focus {
 }
 
 /* Form help
-			============================= */
+      ============================= */
 
 .form-group .form-help {
 	margin: 0;
@@ -1230,7 +1229,7 @@ textarea:focus {
 }
 
 /* Form error handling
-			============================= */
+      ============================= */
 
 input:not(:placeholder-shown)~.form-field-icon::after {
 	height: 100%;
