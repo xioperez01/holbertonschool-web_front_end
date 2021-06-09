@@ -1,0 +1,84 @@
+/** VARIABLES **/
+
+:root {
+	--color-primary: #E0003C;
+	--color-hover: #BC1340;
+	--color-grey: #8C8C8C;
+	--text-color-withe: #ffffff;
+}
+
+/** CUSTOMISE **/
+
+/* Butons
+			***************/
+
+/* Button-outline-primary */
+
+.btn-outline-primary {
+	border-color: var(--color-primary);
+	color: var(--color-primary);
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:active,
+.btn-outline-primary:focus {
+	background-color: var(--color-hover);
+	color: var(--text-color-withe);
+	border-color: var(--color-hover);
+}
+
+/* Button-primary */
+
+.btn-primary {
+	background-color: var(--color-primary);
+	border-color: var(--color-primary);
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+	background-color: var(--color-hover);
+	border-color: var(--color-hover);
+}
+
+/* Navigation Bar
+			***************/
+
+/* Border bottom */
+
+.border-bottom {
+	border-color: var(--color-primary) !important;
+}
+
+/* a Links
+			***************/
+
+a,
+a:hover,
+a:focus {
+	color: var(--color-primary) !important;
+}
+
+/* Cards
+			***************/
+
+.card,
+.card-header,
+.card-footer {
+	border-color: var(--color-primary);
+	border-radius: 1rem;
+}
+
+.card-header {
+	background-color: var(--color-primary);
+	color: var(--text-color-withe);
+	border-top-left-radius: 1rem !important;
+	border-top-right-radius: 1rem !important;
+}
+
+/* text-muted
+			***************/
+
+.text-muted {
+	color: var(--color-grey) !important;
+}
