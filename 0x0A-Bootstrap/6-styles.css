@@ -23,7 +23,7 @@
 .btn-outline-primary:active,
 .btn-outline-primary:focus {
 	background-color: var(--color-hover);
-	color: var(--text-color-withe);
+	color: var(--text-color-withe) !important;
 	border-color: var(--color-hover);
 }
 
