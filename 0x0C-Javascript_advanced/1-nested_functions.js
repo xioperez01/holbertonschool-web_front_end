@@ -1,22 +1,22 @@
 const welcome = "Welcome";
 
 function outer() {
-	alert(welcome);
+  alert(welcome);
 
-	const course = "Holberton";
+  const course = "Holberton";
 
-	function inner() {
-		alert(welcome + " " + course);
+  function inner() {
+    alert(welcome + " " + course);
 
-		const exclamation = "!";
+    const exclamation = "!";
 
-		function inception() {
-			alert(welcome + " " + course + " " + exclamation);
-		}
+    function inception() {
+      alert(welcome + " " + course + " " + exclamation);
+    }
 
-		inception();
-	}
-	inner();
+    inception();
+  }
+  inner();
 }
 
 outer();
