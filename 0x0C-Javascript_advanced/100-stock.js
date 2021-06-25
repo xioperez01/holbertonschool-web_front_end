@@ -16,7 +16,7 @@ function processError(itemName) {
 function processOrder(itemName, callbackPayment, callbackError) {
   let itemNameLower = itemName.toLowerCase();
   if (stock[itemNameLower] == undefined) {
-    prompt(`Item ${itemName} is not offered`);
+    alert(`Item ${itemName} is not offered`);
     return;
   }
 
