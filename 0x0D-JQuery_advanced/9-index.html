@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Task 9</title>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <style>
+    .loading {
+      opacity: 0.2;
+    }
+  </style>
+</head>
+
+<body>
+  <script type="application/javascript">
+    $(function () {
+      function createSearchForm() {
+        const $submit = $("<input type='submit'>")
+        $submit.click(function () {
+          queryWikipedia($("input").val());
+        });
+        $("body").append("<input type='text'>", $submit, "<ul></ul>", "<ul id='pagination'></ul>");
+      };
+
+      function addNewArticle(id, title, snippet) {
+        let $li = $("<li></li>");
+        let $p1 = $(`<p><span>id -</span><b>${title}</b></p>`);
+        let $p2 = $(`<p>${snippet}</p>`);
+        $li.append($p1, $p2);
+        $("ul").append($li);
+      };
+
+      function queryWikipedia(search, offset = 0) {
+        const url = "https://en.wikipedia.org/w/api.php";
+        displayLoading(true)
+        $.ajax({
+          url: url + "?origin=*",
+          type: "get",
+          data: {
+            action: "query",
+            format: "json",
+            list: "search",
+            srsearch: search,
+            sroffset: offset * 10,
+            srlimit: 10,
+            srsort: "create_timestamp_desc",
+          },
+          success: function (response) {
+            displayLoading(false);
+            if (response.query) {
+              if (response.query.search) {
+                list = response.query.search;
+                for (let i of list) {
+                  addNewArticle(i.pageid, i.title, i.snippet);
+                }
+              }
+              if (response.query.searchinfo) {
+                numberOfItems = response.query.searchinfo.totalhits;
+                buildPagination(numberOfItems, itemsPerPage = 10, offset);
+              }
+            }
+          },
+          error: function (xhr) {
+            alert("Action was not possible");
+          },
+        })
+      };
+
+      function buildPagination(numberOfItems, itemsPerPage, currentOffset) {
+        $("#pagination").html("");
+        const $pages = Math.floor(numberOfItems / itemsPerPage);
+        for (let index = 1; index < $pages; index++) {
+          let $page = $(`<li>${index}</li>`).css({
+            "cursor": "pointer",
+            "margin-left": "10px",
+            "display": "inline",
+          });
+          if (index === currentOffset + 1) $page.css("font-weight", "bold");
+          $page.click(function () {
+            const query = $("input").val();
+            queryWikipedia(query, index - 1);
+          });
+          $('#pagination').append($page);
+        }
+      }
+
+      function displayLoading(loading) {
+        const $firstUl = $("ul").first();
+        if (loading === true) $firstUl.wrap('<div class="loading"></div>')
+        else $firstUl.unwrap()
+      }
+      createSearchForm()
+    })
+  </script>
+</body>
+
+</html>
