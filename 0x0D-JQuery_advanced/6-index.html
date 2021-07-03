@@ -44,10 +44,10 @@
           "display": "flex",
           "flex-direction": "row"
         });
-        const $input = ("<input type='text'>");
-        const $select = (
+        const $input = $("<input type='text'>");
+        const $select = $(
           "<select><option value='before'>Before</option><option value='after'>After</option></select>");
-        const  $submit = ("<input type='submit'>");
+        const  $submit = $("<input type='submit'>");
         $("body").prepend($cointainer.append($input, $input, $select, $submit));
 
         $("input:nth-of-type(3)").click(function () {
