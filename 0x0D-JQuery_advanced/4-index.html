@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <title>Task 3</title>
+  <title>Task 4</title>
 
   <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
     integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
@@ -40,7 +40,11 @@
           )
         );
       }
+      function replaceFamilyTree() {
+        $('tbody').html('<tr><td>Gerard</td><td>Bonissa</td></tr>');
+      }
       createFamilyTree();
+      replaceFamilyTree();
     })
   </script>
 </body>
